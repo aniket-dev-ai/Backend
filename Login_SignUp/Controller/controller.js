@@ -107,3 +107,16 @@ exports.login = async (req, res) => {
     });
   }
 };
+
+exports.Student = async (req, res) => {
+  return res.status(200).json({
+    success: true,
+    message: "This route is only for students",
+  });
+};
+exports.Admin = async (req, res) => {
+  return res.status(200).json({
+    success: true,
+    message: "This route is only for Admins",
+  });
+};
